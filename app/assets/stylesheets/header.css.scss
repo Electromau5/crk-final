@@ -1,0 +1,113 @@
+.header1
+{
+	height: 58px;
+}
+
+.header1:hover
+{
+	background-color: orange;
+}
+
+.header1:hover > a
+{
+	color: #fff!important;
+}
+.master-container
+{
+	height: 400px;
+	background-image: url(landing-2.jpg);
+	background-position: 0% 25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+  	padding-top: 48px;
+  	padding-bottom: 48px;
+  	margin-bottom: 30px;
+  	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+
+}
+
+.name
+{
+	color: #a50000;
+	font-family: 'GlacialIndifference-Bold', 'sans-serif';
+	font-size: 50px;
+	margin-top: 5%;
+}
+.designation
+{
+	float: left;
+	margin-top: -10px;
+	margin-left:4%;
+}
+
+.social-icons
+{
+	float: right;
+}
+
+.social-icons img
+{
+	height: 60px;
+	transition: all .2s ease-in-out;
+	animation:mymove 2s;
+	-webkit-animation:mymove 2s;
+	-moz-animation:mymove 2s;
+	-o-animation:mymove 2s;
+}
+
+@keyframes mymove
+{ 
+	from {	
+			margin-top: 90px;	
+			opacity: 0;	
+		 }
+	to 	{	
+			margin-bottom: 65px;	
+			opacity: 1; 
+		}
+}
+
+@-webkit-keyframes mymove
+{ 
+	from {	
+			margin-bottom: 90px;	
+			opacity: 0;	
+		 }
+	to 	{	
+			margin-bottom: 65px;	
+			opacity: 1; 
+		}
+}
+
+@-moz-keyframes mymove
+{ 
+	from {	
+			margin-bottom: 90px;	
+			opacity: 0;	
+		 }
+	to 	{	
+			margin-bottom: 65px;	
+			opacity: 1; 
+		}
+}
+
+@-o-keyframes mymove
+{ 
+	from {	
+			margin-bottom: 90px;	
+			opacity: 0;	
+		 }
+	to 	{	
+			margin-bottom: 65px;	
+			opacity: 1; 
+		}
+}
+
+.social-icons img:hover
+{
+	transform: scale(1.3);
+}
